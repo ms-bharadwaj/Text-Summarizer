@@ -79,6 +79,3 @@ def index():
         top_n = int(request.form['top_n'])
         summarize_text = generate_summary(input_text, top_n)
     return render_template('index.html', summarize_text=summarize_text)
-
-if __name__ == '__main__':
-    app.run(debug=True)
